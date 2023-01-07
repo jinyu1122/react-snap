@@ -3,11 +3,12 @@
 const url = require("url");
 const { run } = require("./index.js");
 const {
-  reactSnap,
   homepage,
   devDependencies,
   dependencies
 } = require(`${process.cwd()}/package.json`);
+
+const reactSnap = require(`${process.cwd()}/react-snap.json`);
 
 const publicUrl = process.env.PUBLIC_URL || homepage;
 
